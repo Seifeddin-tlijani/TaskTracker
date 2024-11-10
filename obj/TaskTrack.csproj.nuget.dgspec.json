@@ -50,13 +50,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -76,11 +76,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[1.2.3, )"
+              "version": "[1.6.22, )"
             },
             "Microsoft.SqlServer.Server": {
               "target": "Package",
@@ -88,11 +92,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
-            },
-            "XActDependency.AutoMapper": {
-              "target": "Package",
-              "version": "[0.3.0, )"
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
