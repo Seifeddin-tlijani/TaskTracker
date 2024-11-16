@@ -39,7 +39,7 @@ namespace TaskTrack.API.Controllers
                 return BadRequest(ModelState);
 
             var createdProject = await _projectService.AddProjectAsync(project);
-            return CreatedAtAction(nameof(GetProjectById), new { id = createdProject.ProjectId.0 .}, createdProject);
+            return CreatedAtAction(nameof(GetProjectById), new { id = createdProject.ProjectId}, createdProject);
         }
 
         [HttpPut("{id}")]

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("f85d5eaf-02b8-4a4e-9e16-0953b4c7d5dd")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskTrack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a08d19b41cd0e3bf9d7f4c1c1fd735a1285dba5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a9e8c55a5a2166502247de6b4b55a0f6ace4ca3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskTrack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskTrack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
