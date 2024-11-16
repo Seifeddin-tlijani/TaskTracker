@@ -25,7 +25,9 @@ namespace TaskTrack.Services
         {
             try
             {
-                return await _context.Projects.ToListAsync();
+                return await _context.Projects
+                               .Include(p => p.Tasks)  // Includes the related tasks for each project
+                               .ToListAsync();
             }
             catch (DbUpdateException ex)
             {
